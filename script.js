@@ -49,8 +49,8 @@ button.addEventListener('click', () => {
                     gridItem.className = "grid-item"
                     grid.appendChild(gridItem)
                     
-                    grid.style.gridTemplateColumns = Array(factor).fill('1em').join(' ')
-                    grid.style.gridTemplateRows = Array(num / factor).fill('1em').join(' ')
+                    grid.style.gridTemplateColumns = Array(num / factor).fill('1em').join(' ')
+                    grid.style.gridTemplateRows = Array(factor).fill('1em').join(' ')
                 }
             }
 
