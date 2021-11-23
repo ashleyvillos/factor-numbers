@@ -15,6 +15,9 @@ button.addEventListener('click', () => {
         const factors = factorize(num)
         let bottomContainer = document.getElementById('bottom-container')
 
+        // remove all previous child nodes
+        bottomContainer.querySelectorAll('*').forEach(n => n.remove());
+
         let factorContainer = document.createElement('div');
         factorContainer.className = "blocks-container"
 
